@@ -32,7 +32,7 @@ if($_GET['name']==1)
 }
 else if($_GET['name']==2)
 {
-	$query="update info set PreInternal='".$_GET['sx']."%' where id='".$_GET['id']."'";
+	$query="update info set PreInternal='".$_GET['sx']."' where id='".$_GET['id']."'";
 	$run=mysqli_query($db,$query);
 	if($run)
 	{
@@ -45,7 +45,7 @@ else if($_GET['name']==2)
 }
 else if($_GET['name']==3)
 {
-	$query="update info set PreExternal='".$_GET['sx']."%' where id='".$_GET['id']."'";
+	$query="update info set PreExternal='".$_GET['sx']."' where id='".$_GET['id']."'";
 	$run=mysqli_query($db,$query);
 	if($run)
 	{
